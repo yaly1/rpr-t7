@@ -1,7 +1,7 @@
-package ba.unsa.etf.rpr.tutorijal7;
+package ba.unsa.rpr.tutorijal7;
 
 import java.util.ArrayList;
 
-public class UN {
+class UN {
     private ArrayList<Drzava> NizDrzava;
 }
