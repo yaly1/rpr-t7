@@ -1,9 +1,26 @@
 package ba.unsa.rpr.tutorijal7;
 
+import java.util.Arrays;
+
 class Grad {
     private String naziv;
     private int brojStanovnika;
     private double[] temperature = new double[1000];
+
+    @Override
+    public String toString() {
+        return "Grad{" +
+                "naziv='" + naziv + '\'' +
+                ", brojStanovnika=" + brojStanovnika +
+                ", temperature=" + Arrays.toString(temperature) +
+                '}';
+    }
+
+    Grad(String naziv, int brojStanovnika, double[] temperature) {
+        this.naziv = naziv;
+        this.brojStanovnika = brojStanovnika;
+        this.temperature = temperature;
+    }
 
     public Grad() {
     }
